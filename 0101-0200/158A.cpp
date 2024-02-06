@@ -8,6 +8,6 @@ int main() {
     int n, k, a[55], cnt=0;
     cin >> n >> k;
     rep(i,0,n) cin >> a[i];
-    rep(i,0,n) cnt += (a[i] >= a[k] && a[i] > 0);
+    rep(i,0,n) cnt += (a[i] >= a[k-1] && a[i] > 0);
     cout << cnt;
 }
